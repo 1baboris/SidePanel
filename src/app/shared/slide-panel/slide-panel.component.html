@@ -1,0 +1,11 @@
+<div
+  class="z-20 fixed top-0 left-0 h-full w-full transform transition-transform ease-in duration-150"
+  [ngClass]="{ '-translate-x-full': !openSlidePanel }"
+>
+  <div
+    class="z-20 max-w-sm p-6 relative h-screen bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-600 shadow"
+  >
+    <ng-content></ng-content>
+  </div>
+  <div class="z-10 bg-zinc-900/15 top-0 left-0 absolute w-full h-full"></div>
+</div>
